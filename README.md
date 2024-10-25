@@ -1,6 +1,3 @@
-
----
-
 ### README.md for AST Rule Engine
 
 # AST Rule Engine
