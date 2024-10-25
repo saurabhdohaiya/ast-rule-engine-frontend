@@ -1,46 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### README.md for AST Rule Engine
 
-In the project directory, you can run:
+# AST Rule Engine
 
-### `npm start`
+**Live Demo:** [Live View](https://ast-rule-engine-frontend.onrender.com/create-rule)  
+**GitHub Links:**  
+- **Frontend:** [GitHub Repository for Frontend](https://github.com/saurabhdohaiya/ast-rule-engine-frontend/tree/master)  
+- **Backend:** [GitHub Repository for Backend](https://github.com/saurabhdohaiya/ast-rule-engine-backend/tree/master)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The AST Rule Engine is a powerful tool designed to allow users to create, combine, and evaluate conditional rules based on specific criteria. The application provides an intuitive interface for managing rules and offers real-time evaluations to help users make informed decisions based on their data.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Create Rule**
+   - Users can define conditional statements by entering rule strings. The application generates an Abstract Syntax Tree (AST) for the defined rules, which can be visualized in JSON format.
 
-### `npm run build`
+2. **Combine Rules**
+   - The application allows users to combine multiple rules using logical operators (AND, OR). The combined rules are represented as a single AST, enabling complex decision-making based on multiple conditions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Evaluate Rules**
+   - Users can evaluate their defined rules against specific data inputs. The evaluation results indicate whether the conditions specified in the rules are met, helping users determine eligibility based on defined criteria.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Database Integration**
+   - The application integrates with a database to store rules, allowing users to persist their created and combined rules. This feature enables easy retrieval and management of rules over time.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **User-Friendly Interface**
+   - The application features a responsive and interactive user interface that simplifies the process of creating and managing rules. The UI is designed for easy navigation and usability across devices.
 
-### `npm run eject`
+6. **Error Handling**
+   - Robust error handling is implemented throughout the application. Users receive clear feedback in the form of error messages when invalid inputs are provided or if any issues occur during API calls.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+7. **Loading States**
+   - The application displays loading states with a shimmer effect while data is being fetched or processed, improving the user experience by providing visual feedback.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Routes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **POST /api/rules/create_rule:** Creates a new rule based on the provided rule string, saves it to the database, and returns the generated AST.
+- **POST /api/rules/combine_rules:** Combines multiple rule strings, saves the combined rule to the database, and returns a single AST representing the combined rules.
+- **POST /api/rules/evaluate_rule:** Evaluates a specified AST against provided data and returns the eligibility result.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Running Locally
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository.
+   ```bash
+   git clone https://github.com/your-username/your-frontend-repo.git
+   cd your-frontend-repo
