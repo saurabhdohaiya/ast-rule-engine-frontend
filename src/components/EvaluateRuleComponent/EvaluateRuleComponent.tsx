@@ -50,7 +50,11 @@ const EvaluateRuleComponent: React.FC = () => {
                 <div className="result-container">
                     <h2>Evaluation Result</h2>
                     {result !== null ? (
-                        <div className='result-line'>Result: {result ? 'True' : 'False'}</div>
+                        <div className="generated-ast-outer">
+                            <div className='generated-ast-inner'>
+                                <div className='result-line'>Result: {result ? 'True' : 'False'}</div>
+                            </div>
+                        </div>
                     ) : (
                         <div className="generated-ast-outer">
                             <div className='generated-ast-inner'>
