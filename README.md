@@ -48,5 +48,16 @@ The AST Rule Engine is a powerful tool designed to allow users to create, combin
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/your-frontend-repo.git
-   cd your-frontend-repo
+   git clone https://github.com/saurabhdohaiya/ast-rule-engine-frontend/tree/master
+   cd ast-rule-engine-frontend
+   ```
+2. Install the Dependencies
+   ```bash
+   npm install
+   ```
+3. Add the necessary dependancy in the .env file
+4. Run the application
+   ```bash
+   npm run start
+   ```
+   
