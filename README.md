@@ -38,6 +38,8 @@ The AST Rule Engine is a powerful tool designed to allow users to create, combin
 
 ## Routes
 
+![image](https://github.com/user-attachments/assets/2eea5f30-4a06-4420-ad7c-cef04f4bbe74)
+
 - **POST /api/rules/create_rule:** Creates a new rule based on the provided rule string, saves it to the database, and returns the generated AST.
 - **POST /api/rules/combine_rules:** Combines multiple rule strings, saves the combined rule to the database, and returns a single AST representing the combined rules.
 - **POST /api/rules/evaluate_rule:** Evaluates a specified AST against provided data and returns the eligibility result.
