@@ -1,5 +1,3 @@
-### README.md for AST Rule Engine
-
 # AST Rule Engine
 
 **Live Demo:** [Live View](https://ast-rule-engine-frontend.onrender.com/create-rule)  
