@@ -1,0 +1,51 @@
+@import '../../global.scss';
+
+.create-rule-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem; 
+
+    .section-container {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 4rem; 
+
+        .add-rule-container {
+            display: flex; 
+            flex-direction: column; 
+            flex: 1; 
+
+            p {
+                color: #343a40; 
+                margin-bottom: 15px; 
+                line-height: 1.5; 
+            }
+
+            textarea {
+                @extend .textarea; 
+            }
+
+            .btn-container {
+                display: flex; 
+                gap: 1rem; 
+                justify-content: center; 
+                align-items: center; 
+            }
+
+            .btn-filled {
+                @extend .btn; 
+                @extend .btn-filled; 
+            }
+
+            .btn-outlined {
+                @extend .btn; 
+                @extend .btn-outlined; 
+            }
+        }
+
+        .ast-container {
+            @extend .ast-container; 
+        }
+    }
+}

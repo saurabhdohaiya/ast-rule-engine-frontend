@@ -1,0 +1,52 @@
+@import '../../global.scss';
+
+.combine-rule-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem; 
+
+    .section-container {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 4rem; 
+
+        .add-rule-container {
+            display: flex; 
+            flex-direction: column; 
+            max-width: 50%; 
+
+            .rule-input {
+                margin-bottom: 10px; 
+            }
+
+            input {
+                @extend .input; // Use the common input class
+            }
+
+            .btn-container {
+                display: flex; 
+                gap: 1rem; 
+                justify-content: center; 
+            }
+
+            .btn-filled {
+                @extend .btn; // Use common button class
+                @extend .btn-filled; // Use common filled button class
+            }
+
+            .btn-outlined {
+                @extend .btn; // Use common button class
+                @extend .btn-outlined; // Use common outlined button class
+            }
+
+            label {
+                margin-top: 10px; 
+            }
+        }
+
+        .ast-container {
+            @extend .ast-container; // Extend from common AST container class
+        }
+    }
+}

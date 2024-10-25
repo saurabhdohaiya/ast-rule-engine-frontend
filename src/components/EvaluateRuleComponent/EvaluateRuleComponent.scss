@@ -1,0 +1,40 @@
+@import '../../global.scss';
+
+.evaluate-rule-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem; 
+
+    .section-container {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 4rem; 
+
+        .input-container {
+            display: flex; 
+            flex-direction: column; 
+            flex: 1; 
+
+            .input-textarea {
+                @extend .textarea; 
+            }
+
+            .btn-filled {
+                @extend .btn; 
+                @extend .btn-filled; 
+                width: 50%;
+                display: flex; 
+                justify-content: center;
+                align-items: center; 
+            }
+        }
+
+        .result-container {
+            @extend .ast-container; 
+            .result-line{
+                font-size: large;
+            }
+        }
+    }
+}
